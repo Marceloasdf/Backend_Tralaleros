@@ -16,7 +16,14 @@ public class Producto {
 
     private String name;
     private int price;
+
+    // Mantenemos el nombre 'desc' para que el Frontend siga funcionando,
+    // pero en la base de datos la columna se llamará 'descripcion_producto'
+    // para evitar el error de sintaxis
+    @Column(name = "descripcion_producto")
     private String desc;
+    
+
     private String category;
 
     // imagen de la portada
