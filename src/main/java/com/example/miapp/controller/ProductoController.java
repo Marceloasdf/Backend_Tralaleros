@@ -48,6 +48,4 @@ public class ProductoController {
         productoRepository.deleteById(id);
     }
 
-    
-
 }
